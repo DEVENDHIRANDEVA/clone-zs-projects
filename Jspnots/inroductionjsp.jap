@@ -1,0 +1,13 @@
+java server page(jsp);
+	1.Directive tags;
+			-	page directive <%@ page     % >
+			- 	include directive  ,,,
+			-     	taglib directive  ,,,
+	2.Standerd Action tag;
+			-	Forword action
+			- 	include action
+			- 	useBean action
+	3.code related tags;
+			-	jsp expression tag <%= %>
+			-	scriplet tag <% %>
+			-	declaration tag	<%! %>

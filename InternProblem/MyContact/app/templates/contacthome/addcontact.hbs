@@ -1,0 +1,44 @@
+
+<h1 class="text-center p-3">New Contact</h1>
+
+			<form class="container border">
+					  <div class="text-center row p-3 d-flex justify-content-center">
+					  	<div class=" col-3">
+					   		 <label for="name" >ContactName    :</label>
+					    </div>
+					    <div >	
+					    	
+					    	{{input type="text" id="name" value=name class="name"  placeholder="Name"}}
+					    </div>
+					  </div>
+					  <div class="text-center row p-3  d-flex justify-content-center">
+					  	<div class=" col-3">
+					  			<label for="number" >Contact Number :</label>
+					  	</div>
+					  	<div>
+					  			
+					  			{{input type="Number" id="number" class="number"  value=number placeholder="Mobile number"}}
+					  	</div>	    
+					    
+					  </div>
+
+					  <div class=" d-flex justify-content-center p-3 row">
+					  	<div class="col-3 text-center p-2">
+					   		 <label for="email">Email Id :</label>
+					    </div>
+					    <div class="p-2">
+					    	
+					    	{{input type="email" id="email" class="email" value=email placeholder="Email Id"}}
+					  	</div>
+					  </div>
+
+					  <div class="text-center p-3">
+
+							  <input type="button" value="Add contact" class="btn btn-primary" {{action "addDedails" name number email}}>
+							  <button type="button" class="btn btn-primary ml-5" {{action "cancel"}}>cancel</button>
+					 
+					  </div>
+					</form>
+				
+
+{{outlet}}
